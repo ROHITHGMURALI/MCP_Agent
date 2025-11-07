@@ -14,6 +14,7 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "yargs": "^18.0.0"
+    "yargs": "^18.0.0",
+    "mcpgen-core": "0.0.1"
   }
 }
