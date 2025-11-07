@@ -1,0 +1,19 @@
+{
+  "name": "mcpgen-cli",
+  "version": "0.0.1",
+  "description": "CLI for MCP Tool Generation",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "cli": "npx ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "@types/yargs": "^17.0.34",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "yargs": "^18.0.0"
+  }
+}
