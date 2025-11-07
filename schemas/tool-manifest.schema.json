@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/tool-manifest.schema.json",
+  "title": "MCP Tool Manifest",
+  "description": "A manifest describing a single tool for the MCP system.",
+  "type": "object",
+  "required": [
+    "name",
+    "description",
+    "input_schema",
+    "output_schema"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the tool, in camelCase."
+    },
+    "description": {
+      "type": "string",
+      "description": "A brief description of what the tool does."
+    },
+    "input_schema": {
+      "type": "object",
+      "description": "A JSON Schema defining the input parameters for the tool."
+    },
+    "output_schema": {
+      "type": "object",
+      "description": "A JSON Schema defining the output of the tool."
+    },
+    "capabilities": {
+      "type": "object",
+      "properties": {
+        "idempotent": {
+          "type": "boolean",
+          "default": false
+        },
+        "paginated": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "x": {
+      "type": "object",
+      "description": "Extension properties for custom metadata.",
+      "properties": {
+        "group": {
+          "type": "string"
+        },
+        "danger": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
