@@ -7,6 +7,7 @@ requires-python = ">=3.8"
 dependencies = [
     "pyyaml",
     "openapi-spec-validator",
+    "dataclasses-json",
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
