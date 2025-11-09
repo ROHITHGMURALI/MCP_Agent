@@ -1,0 +1,25 @@
+[project]
+name = "mcpgen"
+version = "0.0.1"
+description = "A tool to generate MCP tools from API specifications."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pyyaml",
+    "openapi-spec-validator",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/example/mcpgen"
+
+[project.scripts]
+mcpgen = "mcpgen.__main__:main"
+
+[tool.setuptools]
+packages = ["mcpgen"]
+package-dir = {"" = "src"}
